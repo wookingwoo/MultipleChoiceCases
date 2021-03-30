@@ -1,24 +1,18 @@
-// const distractor = ["A", "B", "C"]  보기 (선택지) (n)
+// const distractor = ["A", "B", "C", "D", "E", "F"]  보기 (선택지) (n)
 const distractor = ["T", "W", "S"] // 보기 (선택지) (n)
 const questionNum = 6 // 문제의 수 (r)
-let permutationOfRepetition = [] // 중복순열 결과 (정답경우의수)
 
 let tryAnswer = [
 
-    [
-        "SWTTTW", 2
-    ],
-    [
-        "TSTSST", 4
-    ],
-    [
-        "TSWSSW", 2
-    ],
-    [
-        "WWTSST", 4
-    ]
+    ["SWTTTW", 2],
+    ["TSTSST", 4],
+    ["TSWSSW", 2],
+    ["WWTSST", 4],
+    ["TWTSWT", 3],
+
 ];
 
+let permutationOfRepetition = [] // 중복순열 결과 (정답경우의수)
 let tryAnswer_array = []
 
 const permuteRepl = (array, n, eachElements, outArr) => {
